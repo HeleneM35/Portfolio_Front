@@ -1,2 +1,21 @@
+.navbar {
+    background-color: #A73874 !important;
+    line-height: 5vh !important;
+}
 
+#navDiv {
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
 
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link {
+        font-size: 3vw;
+    }
+}
