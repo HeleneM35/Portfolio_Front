@@ -9,32 +9,37 @@ const Accueil = () => {
 
     return (
         <>
+        <Container className='acPageCont'>
             <Jumbotron className='txtCont' fluid>
                 <Container >
-                    <h1>Bienvenue sur mon portfolio !</h1>
+                    <h1 className='homeTitle'>Bienvenue sur mon portfolio !</h1>
                     <br/>
-                    <p>
-                        Je m'appelle Hélène Morel.
+                    <p className='txtTitle'>
+                        Passionnée de patrimoine et de digital, je vais bientôt allier les deux pendant mon stage chez 9b+ à Toulon.
                         <br/>
-                        Passionnée de patrimoine et de digital, je vais bientôt allier les deux pendant mon stage chez 9b+.
+                        Je vous invite à découvrir mon profil et mes réalisations.
                     </p>
                 </Container>
             </Jumbotron>
             <Container className='acCont' fluid='xs'>
                 <Row >
-                    <Col xs={12} sm={6} md={6} >
-                        <div className='colAccueil'>
+                    <Col xs={2} className='d-sm-none'></Col>
+                    <Col xs={8} sm={6} md={6} >
+                        <div className='imgAccueil1'>
                             <Image className='photo_ordi' src={photo_ordi} rounded fluid />   
                         </div>
                     </Col>
-                    <Col xs={12} sm={6} md={6} >
-                        <div className='colAccueil'>
-                            <Image className='photo_ordi' src={chateau} rounded fluid />   
+                    <Col xs={2} className='d-sm-none'></Col>
+                    <Col xs={2} className='d-sm-none'></Col>
+                    <Col xs={8} sm={6} md={6} >
+                        <div className='imgAccuei2'>
+                            <Image className='chateau' src={chateau} rounded fluid />   
                         </div>
                     </Col>
+                    <Col xs={2} className='d-sm-none'></Col>
                 </Row>
-
             </Container>
+        </Container>
         </>   
     )
 }

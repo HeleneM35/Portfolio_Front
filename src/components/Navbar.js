@@ -16,6 +16,7 @@ const Navb = () => {
                     <Nav.Link className='nav-link' as={Link} to="/cv">CV</Nav.Link>
                     <Nav.Link className='nav-link' as={Link} to="/projets">Projets</Nav.Link>
                     <Nav.Link className='nav-link' as={Link} to="/interets">Centres d'intérêt</Nav.Link>
+                    <Nav.Link className='nav-link' as={Link} to="/contact">Contact</Nav.Link>
 
                 {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

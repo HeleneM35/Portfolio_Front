@@ -1,0 +1,78 @@
+.cvBigTitle {
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-size: 3vw !important;
+}
+
+.cvCont {
+    padding: 0 !important;
+}
+
+.cvCard {
+    height: 100%;
+}
+
+.headerCv {
+    background-color: #A73874 !important;
+    color: white;
+    font-size: 2.2vw !important;
+}
+
+.bodySkills {
+    padding-left: 5vw !important;
+}
+
+.bodyCv2, .bodyCv3 {
+    padding-left: 2vw !important;
+}
+
+.skills {
+    font-size: 1.5vw !important;
+}
+
+.cvTitle {
+    font-size: 1.5vw !important;
+    color: #A73874;
+}
+
+.cvTxt {
+    font-size: 1.2vw !important;
+}
+
+.rowCvCard {
+    margin-top: 4vw;
+}
+
+@media screen and (max-width: 768px) {
+    .cvBigTitle {
+        font-size: 5vw !important;
+    }
+
+    .headerCv {
+        font-size: 3.8vw !important;
+    }
+
+    .skills {
+        font-size: 2vw !important;
+    }
+    
+    .cvTitle {
+        font-size: 3vw !important;
+    }
+
+    .cvTxt {
+        font-size: 2vw !important;
+    }
+
+    .colCvCard3 {
+        margin-top: 4vw;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    /* .colCvCard2 {
+        padding-left: 2.5vw !important;
+    } */
+}
