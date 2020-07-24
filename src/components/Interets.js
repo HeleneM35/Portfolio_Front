@@ -1,57 +1,47 @@
 import React from "react";
-import { Carousel } from 'react-bootstrap'
-import salome from '../assets/images/salome.jpg'
-import versailles from '../assets/images/versailles.jpg'
-import levy from '../assets/images/levy.jpg'
+import { Button, Container, Row } from 'react-bootstrap'
+import ModalPat from './ModalPat'
 import './Interets.css'
 
 const Interets = (props) => {
 
-    
+    const [modalShow, setModalShow] = React.useState(false);
 
     return (
         <>
-            <h1 className='patTitle'>Patrimoine</h1>
-            <Carousel>
-                <Carousel.Item>
-                    <img
-                    id='painting'
-                    className="d-block"
-                    src={salome}
-                    alt="Peinture"
-                    />
-                    <Carousel.Caption>
-                        <h3>Peinture</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    id='drawing'
-                    className="d-block "
-                    src={levy}
-                    width={800}
-                    height={450}
-                    alt="Arts graphiques"
-                    />
-                    <Carousel.Caption>
-                        <h3>Arts graphiques</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    id="architecture"
-                    className="d-block"
-                    src={versailles}
-                    width={800}
-                    height={450}
-                    alt="Architecture"
-                    />
+            <h1 className='interetsTitle'>Mes centres d'intérêt</h1>
+            <Container className="interetsCont">
+                <Button className='interetsBtn' onClick={() => setModalShow(true)}>
+                    Patrimoine
+                </Button>
+                <Row className='interetsRow'></Row>
+                
+                <Button className='interetsBtn' onClick={() => setModalShow(true)}>
+                    Musique
+                </Button>
+                <Row className='interetsRow'></Row>
 
-                    <Carousel.Caption>
-                        <h3>Architecture</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+                <Button className='interetsBtn' onClick={() => setModalShow(true)}>
+                    Piano
+                </Button>
+                <Row className='interetsRow'></Row>
+
+                <Button className='interetsBtn' onClick={() => setModalShow(true)}>
+                    Voyages
+                </Button>
+                <Row className='interetsRow'></Row>
+
+                <Button className='interetsBtn' onClick={() => setModalShow(true)}>
+                    Romans, séries et films
+                </Button>
+            </Container>
+
+            <ModalPat
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
+            
+            
         </>   
     )
 }

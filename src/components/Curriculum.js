@@ -49,7 +49,7 @@ const Curriculum = () => {
                         <Card className='cvCard'>
                             <Card.Header as="h4" className='headerCv'>Mes expériences</Card.Header>
                             <Card.Body className='bodyCv3'>
-                                <Card.Title className='cvTitle'>Scrum master et développeuse sur un projet client</Card.Title>
+                                <Card.Title className='cvTitle'>Scrum master et développeuse sur un projet client de paris entre amis : Storpe</Card.Title>
                                     <Card.Text className='cvTxt'>
                                     Wild Code School, Marseille | 2020
                                     </Card.Text>

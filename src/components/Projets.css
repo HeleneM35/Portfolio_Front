@@ -1,0 +1,64 @@
+.projetsBigTitle {
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-size: 3vw !important;
+}
+
+.headerProjets {
+    background-color: #99b898 !important;
+    color: white;
+    font-size: 2.2vw !important;
+}
+
+.projetsTitle {
+    font-size: 1.5vw !important;
+    color: #e84a5f;
+}
+
+.projetsTxt {
+    font-size: 1.2vw !important;
+}
+
+.btnProjets {
+    background-color: #feceab !important;
+    font-size: 1.5vw !important;
+}
+
+.btn-primary {
+    border-color: #feceab !important;
+}
+
+.colProjetsCont2 {
+    height: 100% !important;
+}
+
+.projetsCard3 {
+    margin-top: 3vw;
+}
+
+@media screen and (max-width: 768px) {
+    .projetsBigTitle {
+        font-size: 5vw !important;
+    }
+
+    .headerProjets {
+        font-size: 3.8vw !important;
+    }
+
+    .projetsTitle {
+        font-size: 3vw !important;
+    }
+
+    .projetsTxt {
+        font-size: 2vw !important;
+    }
+
+    .btnProjets {
+        font-size: 3vw !important;
+    }
+
+    .projetsCard2 {
+        margin-top: 3vw;;
+    }
+}

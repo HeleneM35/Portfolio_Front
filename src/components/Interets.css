@@ -1,19 +1,38 @@
-.patTitle {
+body {
+    height: 100vh;
+}
+
+.interetsTitle {
     margin-top: 3vw;
     margin-bottom: 3vw;
     font-size: 3vw !important;
+    text-align: center;
 }
 
-#painting {
-    margin: auto;
+.interetsRow {
+    height: 3vw;
 }
 
-#drawing {
-    margin: auto;
+.interetsBtn {
+    border-color: #99b898 !important;
+    background-color: #99b898 !important;
+    width: 70vw;
+    height: 5vw;
+    font-size: 1.5vw !important;
 }
 
-#architecture {
-    margin: auto;
+.interetsCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .interetsBtn {
+        font-size: 3vw !important;
+    }
+
 }
 
 
