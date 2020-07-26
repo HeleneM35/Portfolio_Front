@@ -27,16 +27,12 @@
     padding-left: 2vw !important;
 }
 
-.skills {
-    font-size: 1.5vw !important;
-}
-
 .cvTitle {
     font-size: 1.5vw !important;
     color: #e84a5f;
 }
 
-.cvTxt {
+.skills, .cvTxt {
     font-size: 1.2vw !important;
 }
 

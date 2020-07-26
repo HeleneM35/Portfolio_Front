@@ -1,6 +1,7 @@
 import React from "react";
 import './Projets.css'
-import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap'
+import missile from '../assets/images/missile.png'
 
 const Projets = () => {
 
@@ -22,7 +23,10 @@ const Projets = () => {
 
     return (
         <>
-            <h1 className='projetsBigTitle'>Mes projets</h1>
+            <Row className='rowProjets'>
+                <h1 className='projetsBigTitle'>Mes projets</h1>
+                <Image src={missile} id='missile'/>
+            </Row>
             <Container fluid>
                 <Row>
                     <Col xs={12} md={6} className='colProjetsCont'>

@@ -1,5 +1,14 @@
+.rowProjets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#missile {
+    justify-items: right;
+}
+
 .projetsBigTitle {
-    text-align: center;
     margin-top: 3vw;
     margin-bottom: 3vw;
     font-size: 3vw !important;
@@ -22,7 +31,7 @@
 
 .btnProjets {
     background-color: #feceab !important;
-    font-size: 1.5vw !important;
+    font-size: 1.2vw !important;
 }
 
 .btn-primary {
@@ -55,7 +64,7 @@
     }
 
     .btnProjets {
-        font-size: 3vw !important;
+        font-size: 2vw !important;
     }
 
     .projetsCard2 {

@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Container, Row } from 'react-bootstrap'
+import { Accordion, Button, Card, Container, Row } from 'react-bootstrap'
 import ModalPat from './ModalPat'
+import Playlist from './PlayList'
 import './Interets.css'
 
 const Interets = (props) => {
@@ -15,10 +16,15 @@ const Interets = (props) => {
                     Patrimoine
                 </Button>
                 <Row className='interetsRow'></Row>
-                
-                <Button className='interetsBtn' onClick={() => setModalShow(true)}>
-                    Musique
-                </Button>
+
+                <Accordion>
+                    <Accordion.Toggle as={Button} className='musiqueBtn' variant="link" eventKey="0">
+                        Musique
+                    </Accordion.Toggle>
+                    <Accordion.Collapse eventKey="0">
+                    <Card.Body><Playlist /></Card.Body>
+                    </Accordion.Collapse>
+                </Accordion>
                 <Row className='interetsRow'></Row>
 
                 <Button className='interetsBtn' onClick={() => setModalShow(true)}>

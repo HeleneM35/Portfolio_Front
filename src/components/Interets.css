@@ -27,9 +27,20 @@ body {
     align-items: center;
 }
 
+.musiqueBtn {
+    border-color: #99b898 !important;
+    background-color: #99b898 !important;
+    width: 70vw;
+    height: 5vw;
+    font-size: 1.5vw !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+
 @media screen and (max-width: 768px) {
 
-    .interetsBtn {
+    .interetsBtn, .musiqueBtn {
         font-size: 3vw !important;
     }
 
